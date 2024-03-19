@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #e211e6;
+            color: white;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .welcome-message {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-header {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .team-category {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .team-member-name {
+            font-weight: bold;
+        }
+
+        .team-member-position {
+            font-size: 14px;
+        }
+
+        /* Add this CSS for the Leadership/Marketing team layout */
+        .team-category.leadership-marketing {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .team-category.leadership-marketing .team-member {
+            flex-basis: calc(33.33% - 10px);
+            margin-bottom: 20px;
+        }
+
+        .team-category.leadership-marketing .team-member:nth-child(3n+4) {
+            flex-basis: calc(50% - 10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Company Name</h1>
+        </div>
+        <div class="welcome-message"> Welcome to <span class="company-link">Your Company Name </span>, where a dedicated team of professionals works together to bring innovation, creativity and expertise to the software industry. Get to know the individuals who make our company thrive. </div>
+        <div class="team-header">Meet Our Team</div>
+        <div class="team-category leadership-marketing">
+            <div class="team-member">
+                <img src="https://barrownzgroup.com/Content/Images/Login/male-1354358_1280.png" alt="Founder Name">
+                <div class="team-member-name">Founder Name</div>
+                <div class="team-member-position">Founder / CEO</div>
+            </div>
+            <div class="team-member">
+                <img src="https://barrownzgroup.com/Content/Images/Login/male-1354358_1280.png" alt="Founder Name">
+                <div class="team-member-name">Founder Name</div>
+                <div class="team-member-position">Founder / CEO</div>
+            </div>
+        </div>
+        <div class="team-member">
+            <!-- Adding a new team member -->
+            <img src="https://barrownzgroup.com/Content/Images/Login/male-1354358_1280.png" alt="VP Name">
+            <div class="team-member-name">VP Name</div>
+            <div class="team-member-position">VP, Development & Growth</div>
+        </div>
+        <div class="team-category leadership-marketing">
+            <div class="team-member">
+                <!-- Adding a new team member -->
+                <img src="https://barrownzgroup.com/Content/Images/Login/male-1354358_1280.png" alt="VP Name">
+                <div class="team-member-name">VP Name</div>
+                <div class="team-member-position">VP, Sales & Marketing</div>
+            </div>
+            <div class="team-member">
+                <!-- Adding a new team member -->
+                <img src="https://barrownzgroup.com/Content/Images/Login/male-1354358_1280.png" alt="VP Name">
+                <div class="team-member-name">VP Name</div>
+                <div class="team-member-position">Marking</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
